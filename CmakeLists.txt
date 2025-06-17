@@ -1,0 +1,11 @@
+# 指定CMake的最小版本
+cmake_minimum_required(VERSION 3.10)
+
+# 设置项目名称
+project(leetcode_cmake)
+
+# 设置生成可执行文件的路径
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+
+# 添加可执行文件
+add_executable(leetcode_cmake ${PROJECT_SOURCE_DIR}/src/leetcode.cpp)
